@@ -1,0 +1,35 @@
+<p>play works!</p>
+
+<button (click)="nextOne()">Newt value</button>
+<button (click)="reset()">RAZ</button>
+
+<div>
+    <h2>Subject {{ sub$ | async }}</h2>
+    <p>{{intSubject}}</p>
+    <button (click)="subject()">Subscribe</button>
+    <button (click)="subjectStop()">Unsubscribe</button>
+</div>
+
+<div>
+    <h2>Behaviour {{ beh$ | async }}</h2>
+    <p>{{intBSubject}}</p>
+    <button (click)="behaviour()">Subscribe</button>
+    <button (click)="behaviourStop()">Unsubscribe</button>
+</div>
+
+<div>
+    <h2>Replay {{ rep$ | async }}</h2>
+    <p>{{intRSubject}}</p>
+    <button (click)="replay()">Subscribe</button>
+    <button (click)="replayStop()">Unsubscribe</button>
+</div>
+
+<div>
+    <h2>Async {{ asy$ | async }}</h2>
+    <p>{{intASubject}}</p>
+    <button (click)="asyncSub()">Subscribe</button>
+    <button (click)="asyncSubStop()">Unsubscribe</button>
+    <button (click)="asyncComplete()">Complete</button>
+</div>
+
+
